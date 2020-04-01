@@ -25,6 +25,15 @@ def listSum(l) :
     if len(l) == 0:
         return 0
 
+def product(a,b) :
+    if b==0 :
+        return 0
+    if b==1 :
+        return a
+    else :
+        return a+product(a,b-1)
+
+
 # print(reverseString("")) # ""
 # # print(reverseString("bonjour")) # ruojnob
 # # print(reverseString("ressasser")) # ressasser
@@ -38,6 +47,10 @@ def listSum(l) :
 # print(pow(1, 10)) # 1
 # print(pow(2, 5)) # 32
 # print(pow(7, 2)) # 49
-print(listSum([])) # 0
-print(listSum([42])) # 42
-print(listSum([3,1,5,2])) # 11
+# print(listSum([])) # 0
+# print(listSum([42])) # 42
+# print(listSum([3,1,5,2])) # 11
+print(product(5,2)) # 10
+print(product(9,3)) # 27
+print(product(18,0))# 0
+
