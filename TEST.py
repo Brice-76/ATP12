@@ -17,6 +17,13 @@ def pow(x,n,r=1) :
     else :
         return x*pow(x,n-1)
 
+def listSum(l) :
+    if len(l) != 0:
+        a=l[0]
+        del l[0]
+        return a+listSum(l)
+    if len(l) == 0:
+        return 0
 
 # print(reverseString("")) # ""
 # # print(reverseString("bonjour")) # ruojnob
@@ -27,8 +34,10 @@ def pow(x,n,r=1) :
 # # print(modulo(37, 10)) # 7
 # # print(modulo(8, 2)) # 0
 # # print(modulo(50, 7)) # 1
-print(pow(42, 0)) # 1
-print(pow(1, 10)) # 1
-print(pow(2, 5)) # 32
-print(pow(7, 2)) # 49
-
+# print(pow(42, 0)) # 1
+# print(pow(1, 10)) # 1
+# print(pow(2, 5)) # 32
+# print(pow(7, 2)) # 49
+print(listSum([])) # 0
+print(listSum([42])) # 42
+print(listSum([3,1,5,2])) # 11
