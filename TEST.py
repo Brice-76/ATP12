@@ -52,5 +52,6 @@ def product(a,b) :
 # print(listSum([3,1,5,2])) # 11
 print(product(5,2)) # 10
 print(product(9,3)) # 27
+
 print(product(18,0))# 0
 
